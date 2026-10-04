@@ -379,7 +379,6 @@ function ReceptionistApp({ user, logout }) {
 
   return (
     <div className="receptionist-screen">
-      <WebNotificationBell user={user} />
 
       <style>{`
 
@@ -1968,7 +1967,6 @@ function AssistantApp({ user, logout }) {
 
   return (
     <div className="app">
-      <WebNotificationBell user={user} />
 
       <header className="topbar">
         <div>
@@ -2637,7 +2635,6 @@ function DoctorApp({ user, logout }) {
 
   return (
     <div className="app">
-      <WebNotificationBell user={user} />
       <header className="topbar">
         <div>
           <h1>Smart Patient Care</h1>
@@ -3493,7 +3490,6 @@ function PatientApp({ user, logout }) {
 
   return (
     <div className="app">
-      <WebNotificationBell user={user} />
       <header className="topbar">
         <div>
           <h1>🏥 Smart Patient Care</h1>

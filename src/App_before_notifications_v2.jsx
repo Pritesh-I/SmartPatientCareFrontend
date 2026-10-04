@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import WebNotificationBell from "./components/WebNotificationBell";
 
 const API = 'http://localhost:8080/api'
 const DOCTOR_ID = 1
@@ -379,7 +378,6 @@ function ReceptionistApp({ user, logout }) {
 
   return (
     <div className="receptionist-screen">
-      <WebNotificationBell user={user} />
 
       <style>{`
 
@@ -1968,7 +1966,6 @@ function AssistantApp({ user, logout }) {
 
   return (
     <div className="app">
-      <WebNotificationBell user={user} />
 
       <header className="topbar">
         <div>
@@ -2637,7 +2634,6 @@ function DoctorApp({ user, logout }) {
 
   return (
     <div className="app">
-      <WebNotificationBell user={user} />
       <header className="topbar">
         <div>
           <h1>Smart Patient Care</h1>
@@ -3493,7 +3489,6 @@ function PatientApp({ user, logout }) {
 
   return (
     <div className="app">
-      <WebNotificationBell user={user} />
       <header className="topbar">
         <div>
           <h1>🏥 Smart Patient Care</h1>
