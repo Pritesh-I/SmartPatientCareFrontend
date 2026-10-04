@@ -2779,7 +2779,7 @@ function DoctorPage({ page, user, goBack, goToPage }) {
 
   useEffect(() => {
     load()
-  }, [page, doctorId])
+  }, [page, patientId])
 
   const updateAppointment = async (id, status) => {
     try {
@@ -3996,7 +3996,7 @@ function PatientPage({ page, patientId, goBack }) {
 
   useEffect(() => {
     load()
-  }, [page, patientId])
+  }, [page, user?.profileId])
 
   const loadSlots = async (date) => {
     setAppointmentDate(date)
